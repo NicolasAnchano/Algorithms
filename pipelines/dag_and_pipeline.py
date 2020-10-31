@@ -1,3 +1,15 @@
+class Node:
+    # This type of node allow us to have key: value pairs to save data other than integers (as values, with ints as keys)
+    ## Kinda works like a hash table when combined with the BST.
+    def __init__(self, key=None, value=None):
+        self.left = None
+        self.right = None
+        self.key = key
+        self.value = value
+
+    def __str__(self):
+        return "<Node: {}>".format(self.value)
+
 class DAG:
     # Directed Acyclic Graph
     ## Composed of vertices (nodes) and edges (arrows)
